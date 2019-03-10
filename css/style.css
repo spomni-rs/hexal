@@ -125,3 +125,100 @@ a {
 
     background-color: #323232;
   }
+
+/* MAIN */
+
+  main {
+    margin: 0 auto;
+    max-width: 1020px;
+    background-color: white;
+  }
+
+  /* PORTFOLIO */
+
+    .portfolio {
+      padding-bottom: 1px;
+      background-color: white;
+    }
+
+    .portfolio h2 {
+      position: absolute;
+      opacity: 0;
+      left: -2000px;
+    }
+
+    .top.sep-container {
+      padding: 1px 0;
+      display: grid;
+      grid-template-columns: 30px 1fr 140px 1fr 30px;
+    }
+
+    .horisontal-sep {
+      border-top: 1px solid #e4e9eb;
+      margin: 10px 0;
+    }
+
+    .slider {
+      position: relative;
+      padding: 54px 0;
+    }
+
+    .hexagon-line {
+      margin: 64px 0;
+      height: 104px;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hexagon-cropper {
+      display: flex;
+      width: 180px;
+      height: 208px;
+
+      transform: rotate(120deg);
+      overflow: hidden;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hexagon-cropper.container {
+      margin: 0 10px;
+    }
+
+    .short.hexagon-line .vertical-sep {
+      border-left: 1px solid #e4e9eb;
+      height: 104px;
+      margin: 0 10px;
+    }
+
+    .bottom.sep-container {
+      padding: 0 30px;
+    }
+
+    .slider .panel {
+      position: absolute;
+      bottom: 1px;
+      left: 30px;
+
+      display: flex;
+      width: 51px;
+
+      justify-content: space-between;
+    }
+
+    .slider .panel .button {
+      width: 6px;
+      height: 6px;
+      background-color: #ddd2c5;
+    }
+
+    .slider .panel .button:hover {
+      cursor: pointer;
+    }
+
+    .slider .panel .button.active {
+      background-color: #8b8784;
+    }

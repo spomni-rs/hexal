@@ -1,5 +1,5 @@
 body {
-  height: 210vh;
+  background-color: gray;
 }
 
 header {
@@ -8,4 +8,13 @@ header {
 
 nav {
   background-color: #323232;
+}
+
+main {
+  height: 200vh;
+}
+
+.about-me {
+  height: 30vh;
+  background-color: #2eb398;
 }
