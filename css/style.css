@@ -399,6 +399,10 @@ main {
   opacity: 0.7;
 }
 
+.about .social-btn:focus {
+  opacity: 1;
+}
+
 .about .social-btn.facebook {
   width: 25px;
 }
@@ -522,6 +526,16 @@ main {
 
   border: none;
   background-color: #2eb398;
+  cursor: pointer;
+}
+
+.get-in-touch form .submit-btn:hover {
+  opacity: 0.7;
+}
+
+.get-in-touch form .submit-btn:focus {
+  border: none;
+  opacity: 1;
 }
 
 /* RIGHT */
