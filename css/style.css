@@ -114,6 +114,13 @@
     text-decoration: none;
   }
 
+  h1 {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -10000px;
+  }
+
   .hexagon-cropper {
     display: flex;
     width: 180px;
@@ -129,6 +136,8 @@
 /* HEADER */
 
   header {
+    width: 100%;
+    min-width: 1020px;
     height: 63px;
     background-color: #323232;
   }
@@ -212,13 +221,22 @@
 
   main {
     margin: 0 auto;
-    max-width: 1020px;
+    min-width: 1020px;
     background-color: white;
+    overflow-x: hidden;
   }
 
   /* PORTFOLIO */
 
+    .portfolio-container {
+      width: 100%;
+      min-width: 1020px;
+      background-color: white;
+    }
+
     .portfolio {
+      margin: 0 auto;
+      max-width: 1020px;
       padding-bottom: 1px;
       background-color: white;
     }
@@ -294,13 +312,21 @@
     }
 
   /* ABOUT */
-    .about {
-      padding: 13px 99px 12px;
+    .about-container {
+      width: 100%;
+      min-width: 1020px;
       background-color: #2eb398;
+    }
+
+    .about {
+      margin: 0 auto;
+      padding: 13px 0 12px;
+      width: 1020px;
     }
 
     .about>.container {
       display: grid;
+      margin: 0 auto;
       padding: 54px 20px;
 
       box-sizing: border-box;
@@ -399,3 +425,218 @@
     .about .social-btn.dribbble {
       background-position-x: -123px;
     }
+
+/* FOOTER */
+
+  /* GET IN TOUCH */
+
+    .get-in-touch-container {
+      width: 100%;
+      min-width: 1020px;
+      background-color: #323232;
+    }
+
+    .get-in-touch {
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 13px 30px 11px;
+      max-width: 1020px;
+    }
+
+    .get-in-touch .border-container {
+      display: flex;
+      border-top: 1px solid #2b2b2b;
+      border-bottom: 1px solid #2b2b2b;
+      padding: 45px 90px 52px;
+      width: 780px;
+      justify-content: space-between;
+    }
+
+    /* LEFT */
+      .get-in-touch .left {
+        min-width: 580px;
+        max-width: 580px;
+      }
+
+      .get-in-touch h2 {
+        font-weight: normal;
+        font-size: 30px;
+        font-family: "Maven Pro", sans-serif;
+        color: rgb(224, 224, 224);
+      }
+
+      .get-in-touch form p {
+        padding-bottom: 3px;
+
+        font-weight: normal;
+        font-size: 18px;
+        font-family: "Maven Pro", sans-serif;
+
+        color: rgb(190, 190, 190);
+      }
+
+      .get-in-touch form .field {
+
+        display: block;
+        margin: 16px 0;
+        box-sizing: border-box;
+        border:none;
+        padding: 0 14px;
+        width: 100%;
+        height: 38px;
+
+        font-weight: normal;
+        font-size: 12px;
+        font-family: "Lato", sans-serif;
+        color: rgb(190, 190, 190);
+
+        background-color: #454545;
+      }
+
+      .get-in-touch form .field::placeholder {
+        color: rgb(190, 190, 190);
+      }
+
+      .get-in-touch form textarea.field {
+        margin-bottom: 16px;
+        padding: 10px 14px;
+        box-sizing: border-box;
+        height: 150px;
+      }
+
+      .get-in-touch form .submit-btn {
+        float: right;
+
+        margin-bottom: 1px;
+        border: none;
+        width: 90px;
+        height: 37px;
+
+        font-weight: bold;
+        font-size: 12px;
+        font-family: "Lato", sans-serif;
+        color: rgb(215, 252, 245);
+        text-transform: uppercase;
+
+        background-color: #2eb398;
+      }
+
+    /* RIGHT */
+
+      .get-in-touch .right {
+        min-width: 180px;
+        max-width: 180px;
+      }
+
+      .get-in-touch .some-text {
+        margin-top: 69px;
+        height: 152px;
+
+        font-size: 12px;
+        line-height: 1.85;
+        font-family: "Lato", sans-serif;
+
+        text-align: justify;
+        color: rgb(190, 190, 190);
+      }
+
+      .get-in-touch .some-text strong {
+        font-weight: 900;
+        color: rgb(224, 224, 224);
+      }
+
+      .get-in-touch address {
+        margin-top: 14px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: "Lato", sans-serif;
+
+        color: rgb(190, 190, 190);
+      }
+
+      .get-in-touch address .field {
+        margin-bottom: 7px;
+        line-height: 11px;
+      }
+
+      .get-in-touch address .field::before {
+        position: relative;
+        top: 2px;
+        right: 1px;
+
+        display: inline-block;
+        margin-right: 10px;
+        width: 13px;
+        height: 13px;
+
+        content: "";
+        background-image: url("../assets/img/address-icons-map.png");
+      }
+
+      .get-in-touch address .field a {
+        color: rgb(190, 190, 190);
+      }
+
+      .get-in-touch address .phone.field::before {
+        background-position: -13px;
+      }
+
+      .get-in-touch address .email.field::before {
+        background-position: -26px;
+      }
+
+  /* COPYRIGHT */
+    .copyright-container {
+      width: 100%;
+      min-width: 1020px;
+      height: 43px;
+
+      background-color: #222222;
+    }
+
+    .copyright-container .container {
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 1px 39px 0;
+      max-width: 1020px;
+      min-width: 1020px;
+    }
+
+    .copyright-container p {
+      margin-top: 12px;
+
+      font-weight: normal;
+      font-size: 12px;
+      font-family: "Maven Pro", sans-seif;
+      letter-spacing: -0.2px;
+
+      color: rgb(69, 69, 69);
+    }
+
+/* PIXEL PERFECT */
+  .get-in-touch form p {
+    margin-top: -1px;
+    margin-left: 1px;
+  }
+
+  .get-in-touch form input:first-of-type {
+    margin-top: 16.5px;
+  }
+
+  img[src="assets/img/layer-35.png"] {
+    position: relative;
+    left: 0.5px;
+    bottom: 10.5px;
+  }
+
+  .hexagon-cropper > .hexagon-cropper > .hexagon-cropper {
+    background-color: #323232;
+  }
+
+  img[src="assets/img/foto.png"] {
+    position: relative;
+    left: 2px;
+    bottom: 0px;
+  }
